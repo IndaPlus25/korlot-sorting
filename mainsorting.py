@@ -1,7 +1,8 @@
 #Main file to choose which method to use
 
-#import slumpa as slumpa
+import slumpa as slumpa
 from Insertion_sort import *
+from Selection_sort import *
 
 
 def fun_programtask():
@@ -13,15 +14,16 @@ def fun_programtask():
         fun_programtask()
 
     elif command == "2":
-        slumpa.rdn_new_list()
+        my_list = slumpa.rdn_new_list()
+        second_sort(my_list)
         fun_programtask()
     
     elif command == "3":
-        slumpa.rdn_new_list()
+        my_list = slumpa.rdn_new_list()
         fun_programtask()
     
     elif command == "4":
-        slumpa.rdn_new_list()
+        my_list = slumpa.rdn_new_list()
         fun_programtask()
 
     else:

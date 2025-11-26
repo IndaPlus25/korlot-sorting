@@ -10,12 +10,11 @@ def main_insertion(my_list):
     while start_value < len(my_list):
         control_value = start_value
         
-        #todo
-        #Kommer in i loopen men går ur den efter en runda
-        while (my_list[control_value - 1] > my_list[control_value]) & control_value > 0:    
-            my_list[control_value - 1], my_list[control_value] = my_list[control_value], my_list[control_value - 1]
-            print("control value: ",control_value)
-            control_value -= 1
+        while control_value > 0:   
+            if my_list[control_value - 1] > my_list[control_value]:  
+                my_list[control_value - 1], my_list[control_value] = my_list[control_value], my_list[control_value - 1]
+            control_value = control_value - 1
+            
         start_value += 1
 
     print(my_list)

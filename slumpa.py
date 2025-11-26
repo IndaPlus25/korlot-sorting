@@ -18,10 +18,8 @@ def rdn_new_list():
         del sort_list[rnd_index - 1]
         target_val -= 1
 
-    #Uncomment to view the list:
-    #print(random_list)
-
     return random_list
 
 if __name__ == "__main__":
-        rdn_new_list()
+        print(rdn_new_list())
+        
