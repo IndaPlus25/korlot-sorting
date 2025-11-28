@@ -3,6 +3,7 @@
 import slumpa as slumpa
 from Insertion_sort import *
 from Selection_sort import *
+from Merge_sort import *
 
 
 def fun_programtask():
@@ -20,6 +21,7 @@ def fun_programtask():
     
     elif command == "3":
         my_list = slumpa.rdn_new_list()
+        third_sort(my_list)
         fun_programtask()
     
     elif command == "4":
